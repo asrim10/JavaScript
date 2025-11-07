@@ -41,9 +41,12 @@ const sequentialPromise = async () => {
   //wait time is sum of both
   console.timeEnd("sequentialPromise");
 };
+sequentialPromise();
 
 const parallelPromise = async () => {
+  console.time("parallelPromise");
   const [res1, res2] = await Promise.all([delay(3000), delay(5000)]); // wait time is max of both
   console.log(res1, res2);
   console.timeEnd("parallelPromise");
 };
+parallelPromise();

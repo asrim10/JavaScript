@@ -11,7 +11,7 @@ const delay = ms => {
         (resolve, reject) => {
             setTimeout(() => {
                 resolve(`Success`) // success statemet/callback
-            },ms)
+            }, ms)
         }
     )
 }

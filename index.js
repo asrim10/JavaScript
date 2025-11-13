@@ -1,4 +1,6 @@
-const express = require("express"); // commonjs import, synchronous
+// const express = require("express"); // commonjs import, synchronous
+
+import express from "express"; // ES module import import, asynchronous
 
 const app = express();
 const port = 3000;
@@ -11,4 +13,5 @@ app.listen(port, () => {
   console.log(`Server at http://localhost:${port}`);
 });
 
-module.exports = app; // commonjs export
+// module.exports = app; // commonjs export
+export default app; // ES modile export
